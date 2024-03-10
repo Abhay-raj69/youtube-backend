@@ -8,7 +8,7 @@ dotenv.config({
 })
 
 
-
+connectDB()
 
 
 /*
