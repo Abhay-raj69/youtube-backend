@@ -50,7 +50,7 @@ const userSchema = new Schema(
   { timestamps: true }
 );
 
-// we manually add methods inside the Schema
+// we can manually add methods inside the Schema
 
 // since encryption of the password takes time that's why we have used async before callback function
 userSchema.pre("save", async function (next) {
