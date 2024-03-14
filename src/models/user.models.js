@@ -30,7 +30,7 @@ const userSchema = new Schema(
       type: String, // cloudinary url
       required: true,
     },
-    coverImage: {
+    coverimage: {
       type: String, // cloudinary url
     },
     watchHistory: [
@@ -58,7 +58,7 @@ userSchema.pre("save", async function (next) {
   // if we will not introduce the above if condition then every time when user will change anything
   // and save it password will be encrypted again and again so to avoid that scenerio we have used the above if
   // statement
-  this.password = bcrypt.hash(this.password, 10);
+  this.password = await bcrypt.hash(this.password, 10);
   next();
 });
 userSchema.methods.isPasswordCorrect = async function (password) {
