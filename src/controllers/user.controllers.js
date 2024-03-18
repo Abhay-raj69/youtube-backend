@@ -140,6 +140,15 @@ const loginUser=asyncHandler(async (req,res)=>{
     throw new ApiError(401,"password incorrect")
   }
 
+  const {accessToken,refreshToken}=await generateAccessAndRefreshTokens(user._id)
+
+
+  const loggedInUser=await User.findById(user._id).select("-password -refreshToken")
+
+
+  // senng cookie
+
+  const opti
 
 
 })
