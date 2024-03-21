@@ -150,7 +150,7 @@ const loginUser = asyncHandler(async (req, res) => {
     "-password -refreshToken"
   );
 
-  // senng cookie
+  // sending cookie
 
   const options = {
     // only from server it can be modified
