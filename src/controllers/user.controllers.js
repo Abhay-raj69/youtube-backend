@@ -4,7 +4,7 @@ import { User } from "../models/user.models.js";
 import { uploadOnCloudinary } from "../utils/cloudinary.js";
 import { ApiResponse } from "../utils/ApiResponse.js";
 
-// method for generating access and refresh token
+// separate method for generating access and refresh tokens
 const generateAccessAndRefreshTokens = async (userId) => {
   try {
     const user = await User.findById(userId);
