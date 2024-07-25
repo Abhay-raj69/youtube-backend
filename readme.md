@@ -1,6 +1,20 @@
-## learning backend with chai aur code
+## YouTube Backend : A dummy YouTube Backend
+- This project is nothing else just a backend of YouTube, this explores that how YouTube work internally
+- How our data is stored inside YouTube database
 
-Practising backend 
-making a backend of youtube ...for learning purpose
+# Understanding
+- Here you can create your profile and you can understand how youtube works internally.
+- Various third party services like cloudinary is used to reduce load from the server
 
-- [Model Link] (https://app.eraser.io/workspace/8ws1OThb05uM4D7cg4sV?origin=share)
+# Techonologies Used
+- Node.js
+- Express.js
+- MongoDB
+# Libraries Used
+- Cloudinary
+- Multer
+- Cookie-Parser
+- jsonwebtokens
+- cors
+- dotenv
+  
